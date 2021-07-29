@@ -29,7 +29,8 @@ body {
 }
 a {
   text-decoration: none;
-  color: inherit;
+  color: var(--white);
+  padding: 2px 0;
 }
 img {
   max-width: 100%;
@@ -81,6 +82,9 @@ img {
 .header__toggle > span:not(:last-child) {
   margin-bottom: 5px;
 }
+.header__links a:not(:last-child) {
+  margin-right: 2rem;
+}
 .header .heading {
   font-size: 2.5rem;
   line-height: 2.375rem;
@@ -102,7 +106,13 @@ img {
   .header {
     background-image: url("images/desktop/image-hero.jpg");
   }
+  .header .heading {
+    font-size: 72px;
+    line-height: 70px;
+    width: 570px;
+  }
 }
+
 @media only screen and (max-width: 767px) {
   .hide-for-mobile {
     display: none;
