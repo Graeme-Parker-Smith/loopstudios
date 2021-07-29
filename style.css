@@ -49,7 +49,8 @@ img {
 .heading {
   font-family: var(--font-family-heading);
   font-weight: 300;
-  font-size: 2rem;
+  /* font-size: 2rem; */
+  font-size: clamp(2rem, 4vw, 3rem);
   line-height: 2rem;
   text-transform: uppercase;
 }
@@ -155,20 +156,25 @@ section {
 .about__text {
   text-align: center;
 }
+/* Creations Styles */
+.creations {
+  text-align: center;
+}
+
 /* Desktop Styles */
 @media only screen and (min-width: 1024px) {
   .heading {
-    font-size: 3rem;
+    /* font-size: 3rem; */
     line-height: 3rem;
   }
   .header {
     background-image: url("images/desktop/image-hero.jpg");
     margin-bottom: 160px;
   }
-  
-section {
-  margin-bottom: 184px;
-}
+
+  section {
+    margin-bottom: 184px;
+  }
   .header .heading {
     font-size: 72px;
     line-height: 70px;
@@ -187,8 +193,10 @@ section {
     right: 0;
     bottom: 0;
     width: 541px;
+    max-width: 49%;
     height: 317px;
-    padding: 6rem 0 0 6rem;
+    /* padding: 6rem 0 0 6rem; */
+    padding: min(calc(12vw - 76.8px), 6rem) 0 0 min(calc(12vw - 76.8px), 6rem);
     text-align: left;
   }
 }
