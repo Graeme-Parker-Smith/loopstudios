@@ -387,7 +387,9 @@ section {
   .hide-for-desktop {
     display: none;
   }
-  a:not(.header__logo, .logo)::before {
+  .header__links a::before,
+  .footer__social-links a::before,
+  .footer__internal-links a::before {
     content: "";
     position: absolute;
     display: block;
